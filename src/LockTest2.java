@@ -1,3 +1,9 @@
+/**
+ *
+ *lock 的interrupt方法
+ * */
+
+
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 

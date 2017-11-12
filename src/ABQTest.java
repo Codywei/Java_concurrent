@@ -1,5 +1,4 @@
 import java.util.concurrent.ArrayBlockingQueue;
-
 public class ABQTest {
     private int queueSize = 10;
     private ArrayBlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(queueSize);

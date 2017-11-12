@@ -1,3 +1,9 @@
+/**
+ * lock方法和trylock方法
+ *
+ * */
+
+
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

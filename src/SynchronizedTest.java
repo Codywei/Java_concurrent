@@ -4,21 +4,37 @@ public class SynchronizedTest {
     public static void main(String[] args)  {
         final InsertData insertData = new InsertData();
 
-        new Thread() {
+//        new Thread() {
+//            public void run() {
+//                insertData.insert(Thread.currentThread());
+//            };
+//        }.start();
+//
+//
+//        new Thread() {
+//            public void run() {
+//                insertData.insert(Thread.currentThread());
+//            };
+//        }.start();
+
+        new Thread(){
+            @Override
             public void run() {
                 insertData.insert(Thread.currentThread());
-            };
+            }
         }.start();
-
-
-        new Thread() {
+        new Thread(){
+            @Override
             public void run() {
                 insertData.insert(Thread.currentThread());
-            };
+            }
         }.start();
+
     }
 }
-
+/**
+ * 锁住方法
+ * */
 //class InsertData {
 //    private ArrayList<Integer> arrayList = new ArrayList<Integer>();
 //
@@ -29,6 +45,16 @@ public class SynchronizedTest {
 //        }
 //    }
 // }
+
+/**
+  synchronized(synObject) {
+
+ }
+  当在某个线程中执行这段代码块，该线程会获取对象synObject的锁，从而使得其他线程无法同时访问该代码块。
+
+  synObject可以是this，代表获取当前对象的锁，也可以是类中的一个属性，代表获取该属性的锁。
+ */
+
 //class InsertData {
 //    private ArrayList<Integer> arrayList = new ArrayList<Integer>();
 //
@@ -53,5 +79,10 @@ class InsertData {
             }
         }
     }
+
+
+
+
+
 }
 
