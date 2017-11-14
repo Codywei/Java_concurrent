@@ -1,3 +1,7 @@
+/**
+ * Semaphore信号量练习
+ * Semaphore翻译成字面意思为 信号量，Semaphore可以控同时访问的线程个数，通过 acquire() 获取一个许可，如果没有就等待，而 release() 释放一个许可。
+ * */
 import java.util.concurrent.Semaphore;
 
 public class SemaphoreTest {

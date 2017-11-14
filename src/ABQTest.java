@@ -1,3 +1,6 @@
+/**
+ * 阻塞队列（数组）
+ * */
 import java.util.concurrent.ArrayBlockingQueue;
 public class ABQTest {
     private int queueSize = 10;

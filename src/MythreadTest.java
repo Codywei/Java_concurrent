@@ -14,7 +14,7 @@ public class MythreadTest {
         MyThread thread2 = new MyThread("thread2");
         thread2.run();
         MyRunnable runnable=new MyRunnable();//实例化接口的实现类
-        Thread thread3=new Thread(runnable);//将实例作为参数存入构造器中
+        Thread thread3=new Thread(runnable);//将实例作为参数存入构造器中，这种方法无需继承Thread类，方便扩展
 
 
         thread3.start();
