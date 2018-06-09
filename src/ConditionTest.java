@@ -7,7 +7,8 @@
 
  　Condition中的signal()对应Object的notify()；
 
- 　Condition中的signalAll()对应Object的notifyAll()。*/
+ 　Condition中的signalAll()对应Object的notifyAll()。
+ */
 import java.util.PriorityQueue;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
