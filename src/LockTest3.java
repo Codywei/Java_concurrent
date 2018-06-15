@@ -18,12 +18,14 @@ public class LockTest3 {
         final LockTest3 test = new LockTest3();
 
         new Thread(){
+            @Override
             public void run() {
                 test.get(Thread.currentThread());
             };
         }.start();
 
         new Thread(){
+            @Override
             public void run() {
                 test.get(Thread.currentThread());
             };
