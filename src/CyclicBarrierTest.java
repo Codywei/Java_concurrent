@@ -35,7 +35,7 @@ public class CyclicBarrierTest {
                 //以睡眠来模拟写入数据操作
                 Thread.sleep(5000);
                 System.out.println("线程" + Thread.currentThread().getName() + "写入数据完毕，等待其他线程写入完毕");
-                //用来挂起当前线程，直至所有线程都到达barrier状态再同时执行后续任务；
+                //用来挂起当前线程，直至所有线程都到达barrier状态再同时执行后续任务
                 cyclicBarrier.await();
             } catch (InterruptedException e) {
                 e.printStackTrace();
