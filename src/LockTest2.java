@@ -27,13 +27,15 @@ public class LockTest2 {
     }
 
     public void insert(Thread thread) throws InterruptedException{
-        lock.lockInterruptibly();   //注意，如果需要正确中断等待锁的线程，必须将获取锁放在外面，然后将InterruptedException抛出
+        //注意，如果需要正确中断等待锁的线程，必须将获取锁放在外面，然后将InterruptedException抛出
+        lock.lockInterruptibly();
         try {
             System.out.println(thread.getName()+"得到了锁");
             long startTime = System.currentTimeMillis();
             for(    ;     ;) {
-                if(System.currentTimeMillis() - startTime >= Integer.MAX_VALUE)
+                if(System.currentTimeMillis() - startTime >= Integer.MAX_VALUE) {
                     break;
+                }
                 //插入数据
             }
         }
