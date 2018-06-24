@@ -1,5 +1,5 @@
 /**
- * static方法的锁
+ * static syschronized方法的锁
  * */
 
 public class SynchronizedTest2 {
@@ -14,7 +14,7 @@ public class SynchronizedTest2 {
         new Thread() {
             @Override
             public void run() {
-                insertData.insert1();
+                InsertData2.insert1();
             }
         }.start();
     }
