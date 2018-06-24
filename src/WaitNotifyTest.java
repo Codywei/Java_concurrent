@@ -6,6 +6,7 @@
  　　3）调用某个对象的notify()方法能够唤醒一个正在等待这个对象的monitor的线程，如果有多个线程都在等待这个对象的monitor，则只能唤醒其中一个线程；
 
  　　4）调用notifyAll()方法能够唤醒所有正在等待这个对象的monitor的线程；
+
  * */
 public class WaitNotifyTest {
     public static Object object = new Object();
