@@ -1,5 +1,5 @@
 /**
- * ThreadPool程序练习
+ * ThreadPool程序练习（阻塞队列）
  * */
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -14,7 +14,7 @@ public class ThreadPoolTest {
             MyTask myTask = new MyTask(i);
             executor.execute(myTask);
             System.out.println("线程池中线程数目："+executor.getPoolSize()+"，队列中等待执行的任务数目："+
-                    executor.getQueue().size()+"，已执行玩别的任务数目："+executor.getCompletedTaskCount());
+                    executor.getQueue().size()+"，已执行完别的任务数目："+executor.getCompletedTaskCount());
         }
         executor.shutdown();
     }
