@@ -1,7 +1,7 @@
 /**
  * CountDownLatch计数练习
  * CountDownLatch类位于java.util.concurrent包下，利用它可以实现类似计数器的功能。
- * 比如有一个任务A，它要等待其他4个任务执行完毕之后才能执行，此时就可以利用CountDownLatch来实现这种功能了。
+ * 比如有一个任务A，它要等待其他2个任务执行完毕之后才能执行，此时就可以利用CountDownLatch来实现这种功能了。
  * */
 import java.util.concurrent.CountDownLatch;
 
