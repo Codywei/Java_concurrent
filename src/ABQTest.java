@@ -1,5 +1,5 @@
 /**
- * 阻塞队列（数组）
+  阻塞队列（数组）
  * */
 import java.util.concurrent.ArrayBlockingQueue;
 public class ABQTest {
