@@ -22,9 +22,10 @@ public class MythreadTest {
         MyRunnable runnable=new MyRunnable();
         //将实例作为参数存入构造器中，这种方法无需继承Thread类，方便扩展
         Thread thread3=new Thread(runnable);
-
-
         thread3.start();
+
+
+
         new Thread(){
             //3.匿名内部类
             @Override
