@@ -1,5 +1,5 @@
 /**
- * 进程练习
+ 进程练习
  * */
 import java.io.IOException;
 import java.util.Scanner;
