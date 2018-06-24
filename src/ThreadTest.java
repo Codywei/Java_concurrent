@@ -1,5 +1,5 @@
 /**
- * 关于线程中断的五个练习
+ 关于线程中断的五个练习
  * */
 import java.io.IOException;
 
