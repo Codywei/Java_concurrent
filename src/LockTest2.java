@@ -1,6 +1,8 @@
 /**
  *
- *lock 的interrupt方法
+ lock 的interrupt方法
+
+ 当通过lockInterruptibly()方法获取某个锁时，如果不能获取到，只有进行等待的情况下，是可以响应中断的。
  * */
 
 
